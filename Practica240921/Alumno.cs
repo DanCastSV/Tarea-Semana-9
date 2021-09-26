@@ -30,7 +30,7 @@ namespace Practica240921
         //Metodo de llamada 
         public string getinfoStudent()
         {
-            return "El Id de el estudiante: " + IdStudent + " Nombre: " + NameStudent + " Apellido: "
+            return "El Id de el estudiante ingresado es: " + IdStudent + " Nombre: " + NameStudent + " Apellido: "
                 + LastNameStudent + " Edad: " + AgeStudent;
         
         }
