@@ -40,6 +40,10 @@ namespace Practica240921
             this.txtInfo = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tbYear = new System.Windows.Forms.TextBox();
+            this.tbSesion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbId
@@ -58,14 +62,14 @@ namespace Practica240921
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(28, 171);
+            this.tbLastName.Location = new System.Drawing.Point(372, 103);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(142, 22);
             this.tbLastName.TabIndex = 2;
             // 
             // tbAge
             // 
-            this.tbAge.Location = new System.Drawing.Point(191, 171);
+            this.tbAge.Location = new System.Drawing.Point(28, 164);
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(153, 22);
             this.tbAge.TabIndex = 3;
@@ -91,7 +95,7 @@ namespace Practica240921
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 149);
+            this.label3.Location = new System.Drawing.Point(380, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 6;
@@ -100,7 +104,7 @@ namespace Practica240921
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(191, 148);
+            this.label4.Location = new System.Drawing.Point(31, 144);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 17);
             this.label4.TabIndex = 7;
@@ -118,7 +122,7 @@ namespace Practica240921
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(368, 130);
+            this.btnAgregar.Location = new System.Drawing.Point(645, 126);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(96, 35);
             this.btnAgregar.TabIndex = 9;
@@ -135,11 +139,48 @@ namespace Practica240921
             this.listBox1.Size = new System.Drawing.Size(540, 228);
             this.listBox1.TabIndex = 12;
             // 
+            // tbYear
+            // 
+            this.tbYear.Location = new System.Drawing.Point(198, 164);
+            this.tbYear.Name = "tbYear";
+            this.tbYear.Size = new System.Drawing.Size(142, 22);
+            this.tbYear.TabIndex = 13;
+            // 
+            // tbSesion
+            // 
+            this.tbSesion.Location = new System.Drawing.Point(398, 164);
+            this.tbSesion.Name = "tbSesion";
+            this.tbSesion.Size = new System.Drawing.Size(153, 22);
+            this.tbSesion.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(195, 144);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 17);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Ingrese al grado que cursará";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(395, 144);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(162, 17);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Seccion a la que asistirá";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 547);
+            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.ClientSize = new System.Drawing.Size(791, 547);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbSesion);
+            this.Controls.Add(this.tbYear);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtInfo);
@@ -152,7 +193,7 @@ namespace Practica240921
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbId);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ingreso de nuevos estudiantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,6 +213,10 @@ namespace Practica240921
         private System.Windows.Forms.Label txtInfo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox tbYear;
+        private System.Windows.Forms.TextBox tbSesion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }
 

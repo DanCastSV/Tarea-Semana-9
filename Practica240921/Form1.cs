@@ -39,17 +39,22 @@ namespace Practica240921
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Alumno alumno = new Alumno(tbId.Text, tbName.Text, tbLastName.Text, tbAge.Text);
+            Alumno alumno1 = new Alumno(tbYear.Text,tbSesion.Text);
 
             listBox1.Items.Add(alumno.getinfoStudent());
+            listBox1.Items.Add(alumno1.yearinfo());
 
             tbId.Text = "";
             tbName.Text = "";
             tbLastName.Text = "";
             tbAge.Text = "";
-
+            tbYear.Text = "";
+            tbSesion.Text = "";
             tbId.Focus();
 
 
         }
+
+        
     }
 }

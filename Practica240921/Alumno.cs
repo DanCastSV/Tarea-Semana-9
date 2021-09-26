@@ -14,6 +14,9 @@ namespace Practica240921
         public string NameStudent { get; set; }
         public string LastNameStudent { get; set; }
         public string AgeStudent { get; set; }
+        public string SesionStudent { get; set; }
+        public string StudentSchoolYear { get; set; }
+
 
         //elegi autoimplemantadas para ahorrar lineas de codigo y sea mas facil de entender 
 
@@ -27,6 +30,15 @@ namespace Practica240921
             AgeStudent = age;
       
         }
+
+        public Alumno(string curse, string year)
+        {
+            SesionStudent = curse;
+            StudentSchoolYear = year;
+        
+        
+        }
+
         //Metodo de llamada 
         public string getinfoStudent()
         {
@@ -34,6 +46,13 @@ namespace Practica240921
                 + LastNameStudent + " Edad: " + AgeStudent;
         
         }
+        public string yearinfo()
+        {
+            return "Se registro para ir a " + SesionStudent + " grado en la  sección: " + StudentSchoolYear;
+                
+        
+        }
+
 
     }
 }
